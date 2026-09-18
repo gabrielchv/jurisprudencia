@@ -11,3 +11,26 @@ A premissa é simples: pesquisa jurídica não pode depender de referências inv
 - **Filtros** — refine por tribunal, órgão julgador e período.
 - **Resultados verificáveis** — ementa, data e link direto para o site oficial do tribunal.
 - **Login com Google** — autenticação via Firebase.
+
+## Stack
+
+- [Next.js 14](https://nextjs.org) (App Router) + React 18
+- TypeScript
+- Tailwind CSS
+- Firebase Authentication (login com Google)
+- [lucide-react](https://lucide.dev) para ícones
+
+## Estrutura
+
+```text
+src/
+├── app/                     # rotas (App Router)
+│   ├── page.tsx             # landing page
+│   ├── search/page.tsx      # busca com filtros
+│   └── api/search/route.ts  # endpoint de busca
+├── components/              # Header, Footer, DecisionCard
+├── contexts/AuthContext.tsx
+├── hooks/use-outside-click.ts
+├── lib/                     # firebase, constants
+└── types/                   # tipos compartilhados
+```
