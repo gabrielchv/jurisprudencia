@@ -2,9 +2,9 @@
 
 import Link from "next/link";
 import { useState, useRef } from "react";
+import { Menu } from "lucide-react";
 import { useOutsideClick } from "@/hooks/use-outside-click";
 import { useAuth } from "@/contexts/AuthContext";
-import Image from "next/image";
 
 export function Header({ isTransparent = false }: { isTransparent?: boolean }) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -26,9 +26,7 @@ export function Header({ isTransparent = false }: { isTransparent?: boolean }) {
             className="btn-icon-ghost" 
             aria-label="Abrir menu"
           >
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor" className="size-5">
-              <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"></path>
-            </svg>
+            <Menu className="size-5" />
           </button>
           
           {isMobileMenuOpen && (
