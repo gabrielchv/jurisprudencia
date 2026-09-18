@@ -1,9 +1,10 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { COURTS } from "@/lib/constants";
 import Link from "next/link";
 
 export default function Home() {
-  const tribunals = ["STF", "STJ", "TST", "TRF3", "TRF4", "TJPR", "TJRJ", "TJRS", "TJSC", "TJSP", "CARF"];
+  const tribunals = Object.values(COURTS).flat().map((court) => court.label);
 
   return (
     <main className="flex min-h-screen flex-col">
