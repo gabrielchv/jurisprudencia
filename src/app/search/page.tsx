@@ -45,8 +45,8 @@ export default function SearchPage() {
     { title: "Peça", courts: ["STF", "STJ", "TJSP"], date: "28/05/2026", results: 149, href: "#" },
     { title: "dano moral por atraso em voo", courts: ["TJSP"], date: "28/05/2026", results: 58, href: "#" },
     { title: "2312032-56.2025.8.26.0000", courts: ["STF"], date: "28/05/2026", results: 13, href: "#" },
-    { title: "ação individual proposta por sindicato gera litispendência em ação proprosta individualmente por advogado?", courts: ["TST"], date: "28/05/2026", results: 12, href: "#" },
-    { title: "sindicato ingressou com ação de execução individual em face de sentença em ação coletiva promovida pelo mesmo sindicado. Posteriormente, a substituída entrou com a mesma ação particularmente com advogado. Réu alegou litispedência", courts: ["TST"], date: "28/05/2026", results: 39, href: "#" }
+    { title: "ação individual proposta por sindicato gera litispendência em ação proposta individualmente por advogado?", courts: ["TST"], date: "28/05/2026", results: 12, href: "#" },
+    { title: "sindicato ingressou com ação de execução individual em face de sentença em ação coletiva promovida pelo mesmo sindicado. Posteriormente, a substituída entrou com a mesma ação particularmente com advogado. Réu alegou litispendência", courts: ["TST"], date: "28/05/2026", results: 39, href: "#" }
   ];
 
   return (
